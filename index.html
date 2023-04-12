@@ -13,7 +13,7 @@
             <img src="./assets/svg/Logo.svg" alt="Logo Alura">
         </div>
         <div class="grid-item-2">
-            <textarea name="texto" id="inpt_texto" placeholder="Ingresa el texto aquí"></textarea>
+            <textarea name="texto" id="inptTextArea" placeholder="Ingresa el texto aquí"></textarea>
             <div class="box-exclamation">
                 <svg width="17px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
@@ -23,17 +23,29 @@
                 <small>Solo letras minúsculas y sin acentos</small>
             </div>
             <div class="box-controls">
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
+                <button id="btnEncrypted">Encriptar</button>
+                <button id="btnDecrypted">Desencriptar</button>
             </div>
         </div>
         <div class="grid-item-3">
             <div class="box-result-encriptador">
-                <img src="./assets/svg/Muñeco.svg" alt="empty message">
-                <h2>Ningún mensaje fue encontrado</h2>
-                <span>Ingresa el texto que desees encriptar o desencriptar.</span>
+                <img class="pre-information" src="./assets/svg/Muñeco.svg" alt="empty message">
+                <h2 class="pre-information" >Ningún mensaje fue encontrado</h2>
+                <span class="pre-information" >Ingresa el texto que desees encriptar o desencriptar.</span>
+                <textarea id="outptTextArea" id="inpt_texto" placeholder="Ingresa el texto aquí"></textarea>
+                <button id="btnCopyResult">Copiar</button>
             </div>
         </div>
     </main>
+    <footer>
+       <div class="byDeveloper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15px">
+                <path
+                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+            </svg>
+            <small>Desarrollado por <a target="_blank" href="https://github.com/AngelSaul27">AngelSaul27</a></small>
+       </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

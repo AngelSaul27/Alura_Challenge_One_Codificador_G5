@@ -44,6 +44,7 @@ textarea{
     background-color: var(--light-blue-100);
     color: var(--dark-blue-300);
     padding: 0px 10px;
+    font-size: 18px;
     border: none;
     resize: none;
     outline: none;
@@ -81,7 +82,7 @@ textarea::-webkit-scrollbar-thumb:hover {
     gap: 30px;
 }
 
-.box-controls button{
+.box-controls button, .grid-item-3 button{
     padding: 15px;
     border: none;
     border-radius: 14px;
@@ -95,15 +96,27 @@ textarea::-webkit-scrollbar-thumb:hover {
     color: white;
 }
 
-.box-controls button:last-child {
-    background-color: #D8DFE8;
+.box-controls button:last-child, .grid-item-3 button {
+    background-color: transparent;
     color: var(--dark-blue-300);
     border: 1px solid var(--dark-blue-300);
 }
 
 .grid-item-3{
+    min-width: 350px;
     max-width: 350px;
     padding: 10px 25px;
+}
+
+.grid-item-3 button{
+    display: none;
+    margin-top: 15px;
+}
+
+.grid-item-3 textarea {
+    display: none;
+    color: var(--dark-gray-500);
+    background-color: white;
 }
 
 .box-result-encriptador{
@@ -136,13 +149,31 @@ textarea::-webkit-scrollbar-thumb:hover {
     font-size: 14px;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 2px;
+    background-color: var(--dark-blue-300);
+}
+
+.byDeveloper{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    
+}
+
+.byDeveloper a{
+    text-decoration: none;
+    color: rgb(245, 139, 39);
+}
 /* RESPONSIVE DESING */
 
 @media (max-width: 768px) {
     .display-grid{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: max-content auto max-content;
+        display: flex;
+        flex-direction: column;
         gap: 5px;
     }
     
@@ -152,11 +183,12 @@ textarea::-webkit-scrollbar-thumb:hover {
     }
 
     .grid-item-2{
+        height: 100%;
         padding: 20px 0px 20px;
     }
     
     .grid-item-3{
-        max-width: 100%;
+        min-width: 100%;
         height: max-content;
     }
 
@@ -170,16 +202,13 @@ textarea::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 375px) {
+    
     .box-controls{
         flex-direction: column;
         gap: 10px;
     }
 
     .box-controls button{
-        font-size: 18px;
-    }
-
-    textarea{
         font-size: 18px;
     }
 
