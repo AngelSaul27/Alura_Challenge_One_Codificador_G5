@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="display-grid">
+        <div class="grid-item-1">
+            <img src="./assets/svg/Logo.svg" alt="Logo Alura">
+        </div>
+        <div class="grid-item-2">
+            <textarea name="texto" id="inpt_texto" placeholder="Ingresa el texto aquí"></textarea>
+            <div class="box-exclamation">
+                <svg width="17px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd" />
+                </svg>
+                <small>Solo letras minúsculas y sin acentos</small>
+            </div>
+            <div class="box-controls">
+                <button>Encriptar</button>
+                <button>Desencriptar</button>
+            </div>
+        </div>
+        <div class="grid-item-3">
+            <div class="box-result-encriptador">
+                <img src="./assets/svg/Muñeco.svg" alt="empty message">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <span>Ingresa el texto que desees encriptar o desencriptar.</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
